@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+}
+
+.title {
+  font-family: arial;
+  font-size: 32px;
+}
+
+.text {
+  font-family: arial;
+  font-size: 16px;
+}
+
+/* header --> */
+
+.header {
+  width: 100%;
+  height: 50px;
+  background: #18a1ee;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.header > .links {
+  width: 600px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-items: center;
+  align-items: center;
+}
+
+.header > .links > .link{
+  height: 100%;
+  padding: 0 10px;
+  font-family: arial;
+  text-decoration: none;
+  color: #fff;
+  transition: background .2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > .links > .link:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/* <-- hader */
+
+/* main --> */
+
+.main {
+  width: 100%;
+}
+
+/* <-- main */
+
+/* first-content --> */
+
+.first-content {
+  width: 100%;
+  padding: 100px 0;
+  display: grid;
+  justify-items: center;
+  background: #fff;
+}
+
+.first-content > .title {
+  max-width: 700px;
+  margin: 0 0 70px;
+}
+
+.first-content > .text {
+  width: 1170px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+/* <-- first-content */
+
+/* main-content --> */
+
+.main-content {
+  width: 100%;
+  padding: 100px 0;
+  display: grid;
+  justify-items: center;
+  background: #673adb;
+}
+
+.main-content > .title {
+  margin: 0 0 70px;
+  color: #fff;
+}
+
+.main-content > .texts {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 50px;
+  grid-row-gap: 60px;
+}
+
+.main-content > .texts > .text {
+  margin: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.main-content > .texts > .text::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background: #00bcd4;
+  display: block;
+  margin-bottom: 30px;
+  transition: transform .5s;
+}
+
+.main-content > .texts > .text:hover::before {
+  transform: scaleY(-1);
+}
+
+/* <-- main-content */
+
+/* last-content -->  */
+
+.last-content {
+  width: 100%;
+  padding: 100px 0;
+  display: grid;
+  justify-items: center;
+}
+
+.last-content > .title {
+  margin: 0 0 70px;
+}
+
+.last-content > .text {
+  width: 1170px;
+  margin: 0;
+  text-align: justify;
+}
+
+/* <-- last-content  */
+
+/* footer -->  */
+
+.footer {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: #9c27b0;
+}
+
+.footer > .text {
+  color: #fff;
+  margin: 0;
+}
+
+/* <-- footer  */

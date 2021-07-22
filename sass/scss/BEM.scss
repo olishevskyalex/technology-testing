@@ -1,0 +1,21 @@
+@use "sass:math";
+
+$block-width: 1170px;
+
+.block {
+  width: $block-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__element {
+    width: math.div($block-width, 4) - 20;
+    background: #222;
+    color: #fff;
+
+    &_modifier {
+      background: #fff;
+      background: #222;
+    }
+  }
+}

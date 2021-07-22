@@ -1,0 +1,17 @@
+.block {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.block__element {
+  width: 272.5px;
+  background: #222;
+  color: #fff;
+}
+.block__element_modifier {
+  background: #fff;
+  background: #222;
+}
+
+/*# sourceMappingURL=BEM.css.map */
